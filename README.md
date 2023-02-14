@@ -16,3 +16,22 @@ In the homepage of the website, we wandered around to find out which button lead
 
 We needed to host our pages on the internet and create a database connection, and for this we downloaded the WampServer software. WampServer allows us to use our computer as localhost. WampServer allows us to use mySQL and PHP. We designed the category pages, but that wasn't enough. We created a new table in MySQL, researched how to add photos to this table, and then added the following columns to the table: id, name, category, price, filename and stock. After designing each of the category pages and creating our table, it remains to connect them using PHP language. We pulled the data from the database using PHP and showed the products on their category pages. [2]
 In adding the product to the cart, we created a new table called cart. When we press the add to cart button, if this product is not in the table, we add the features of our product to this new table we created ("INSERT INTO .... VALUES .....), if the product is in this table, that is, if it has been added to the cart before, we increase the quantity value." SET quantity = quantity + 1 WHERE id = $product_id";) On the cart page, we can also see the total price of all the products we have added to the cart. When calculating this total amount, we multiply the quantity and price values in the table and add them all.("SELECT SUM(quantity * price) AS total_fiyat FROM cart";). We can instantly change the quantity of the products in the cart and delete them from the cart, that is, from the cart table if we want. When the number of products in the cart changes, we add an action to the form we created so that it works synchronously, that is, simultaneously, in the total price, and we add a new PHP file to this action. It allows us to refresh our page every time we receive an input. (<form class="cart-form" method="POST" action= "/update-product-count.php">) In this way, when we send input from the page, the price is updated simultaneously.
+
+##  3.	Results and Discussion
+Project Management
+Due to the complexity of the website creation process, we had certain challenges in allocating tasks among the group. Several courses' website building procedures and steps were examined. A balanced distribution of tasks was established to the group members as a consequence of thorough investigation. The work packages were thoughtfully and logically organized into learning and task-related components.
+  
+When we look at the original Sephora website, although our categories are less than the original due to our homework, its header, homepage product contents, cart and user login interface are almost the same.
+
+## Limitations and Constraints
+  Not using jquery and other languages has restricted many of our actions that we can easily do via javascript. We were able to pull the logos by importing a link from a logo kit page without using bootstrap.
+4.	Future Considerations
+We were able to construct this website quickly and present it as clearly as we could, which gave our entire group confidence. After completing this project, group members will approach web development in a more optimistic and knowledgeable manner. I appreciate everyone in my group for taking ownership of the project and contributing to it. I also recognize the importance of teamwork in business and on similar projects.
+      5.Conclusion
+All group members now have the answers to a variety of issues, including how to create a website, what actions should be taken first, how this process will continue, and what potential challenges might arise. The finest aspect of the job is that the group members enjoyed their time while working on the website and were eager to learn new things.
+
+
+##  References 
+1.	Başbayan, E., & Akademi, B.-G. (2022, October 18). HTML CSS ve JavaScript Ile E-Ticaret Sitesi Yapımı 2022. Udemy. Retrieved December 17, 2022, from https://www.udemy.com/course/html-css-javascript-ile-e-ticaret-sitesi-yapimi/
+
+2.	“WampServer, La Plate-forme de développement web sous windows - apache, MySQL, PHP,” WampServer. [Online]. Available: https://www.wampserver.com/en/. [Accessed: 19-Dec-2022]. 
